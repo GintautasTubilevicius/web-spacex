@@ -20,7 +20,7 @@ export default function Homepage() {
     return (
         <>
             {!random ? <Loading /> :
-                <section className="flex justify-center max-h-screen">
+                <section className="px-3 flex justify-center max-h-screen">
                     <div className="">
                         <article>
                             <Search />

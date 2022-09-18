@@ -44,28 +44,28 @@ export default function SingleDrink() {
                                     <h1 className="text-xl font-semibold text-gray-800 dark:text-white">{strCategory}</h1>
 
                                     {strAlcoholic !== "Alcoholic" ? (
-                                        <p className="py-2 text-green-300 dark:text-gray-400">{strAlcoholic}</p>
+                                        <p className="py-2 text-green-300 dark:text-green-300">{strAlcoholic}</p>
                                     ) : (
-                                        <p className="text-lg py-2 text-rose-500 dark:text-gray-400">{strAlcoholic}</p>
+                                        <p className="text-lg py-2 text-rose-500 dark:text-rose-500">{strAlcoholic}</p>
                                     )}
 
                                     <h1 className="text-xl font-semibold text-gray-800 dark:text-white">Igredients</h1>
 
-                                    {strIngredient1 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient1} {strMeasure1}</li>) : null}
-                                    {strIngredient2 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient2} {strMeasure2}</li>) : null}
-                                    {strIngredient3 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient3} {strMeasure3}</li>) : null}
-                                    {strIngredient4 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient4} {strMeasure4}</li>) : null}
-                                    {strIngredient5 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient5} {strMeasure5}</li>) : null}
-                                    {strIngredient6 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient6} {strMeasure6}</li>) : null}
-                                    {strIngredient7 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient7} {strMeasure7}</li>) : null}
-                                    {strIngredient8 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient8} {strMeasure8}</li>) : null}
-                                    {strIngredient9 ? (<li className="py-2 text-gray-700 dark:text-gray-400">{strIngredient9} {strMeasure9}</li>) : null}
+                                    {strIngredient1 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient1} {strMeasure1}</li>) : null}
+                                    {strIngredient2 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient2} {strMeasure2}</li>) : null}
+                                    {strIngredient3 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient3} {strMeasure3}</li>) : null}
+                                    {strIngredient4 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient4} {strMeasure4}</li>) : null}
+                                    {strIngredient5 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient5} {strMeasure5}</li>) : null}
+                                    {strIngredient6 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient6} {strMeasure6}</li>) : null}
+                                    {strIngredient7 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient7} {strMeasure7}</li>) : null}
+                                    {strIngredient8 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient8} {strMeasure8}</li>) : null}
+                                    {strIngredient9 ? (<li className="py-2 text-gray-700 dark:text-black">{strIngredient9} {strMeasure9}</li>) : null}
 
                                     <h1 class="text-xl font-semibold text-gray-800 dark:text-white">Instructions</h1>
-                                    <p class="py-2 text-gray-700 dark:text-gray-400">{strInstructions}</p>
+                                    <p class="py-2 text-gray-700 dark:text-black">{strInstructions}</p>
 
                                     <h1 class="text-xl font-semibold text-gray-800 dark:text-white">Serving Glass</h1>
-                                    <p class="py-2 text-gray-700 dark:text-gray-400">{strGlass}</p>
+                                    <p class="py-2 text-gray-700 dark:text-black">{strGlass}</p>
 
                                 </div>
                                 <div className="flex flex-row justify-evenly px-3 pb-3 bg-gray-400">
