@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("./bailando.jpg") center/cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.btn {
+  @apply bg-sky-500 hover:bg-sky-700 px-8 py-2 rounded-full;
+}
+
+.heading {
+  @apply text-white font-bold text-2xl md:text-3xl xl:text-4xl;
+}
+
+p {
+  @apply text-sm;
+  line-height: 1.8;
+}
+
+img{
+  @apply w-auto
+ }
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.spinner article {
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 8px solid #98e2cb21;
+  border-top-color: #10b581;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .articles {
+     min-height: 310px;
+  }
+}
+
+@media (min-width: 1536px) {
+      .articles {
+        min-height: 375px;
+        padding: 5px;
+     }
+     img{
+      @apply w-auto
+     }
+}
+
+.work-sans {
+  font-family: 'Work Sans', sans-serif;
+}
+      
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.hover\:grow {
+  transition: all 0.3s;
+  transform: scale(1);
+}
+
+.hover\:grow:hover {
+  transform: scale(1.07);
+}
+
+
