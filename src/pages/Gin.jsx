@@ -58,7 +58,6 @@ export default function Gin() {
                                 <div key={list.idDrink} className="w-full md:w-1/2 xl:w-1/3 2xl:w-1/4 p-6 flex flex-col">
                                     <Link to={`/drinks/${list.idDrink}`}>
                                         <img className="hover:grow hover:shadow-lg rounded-lg" src={list.strDrinkThumb} alt={list.strDrink} />
-                                        <p className="pt-1 text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quasi cum quam aliquam temporibus maiores</p>
                                     </Link>
                                     <div className="pt-3 flex items-center justify-between">
                                         <p className="text-white text-lg font-bold truncate">{list.strDrink}</p>
