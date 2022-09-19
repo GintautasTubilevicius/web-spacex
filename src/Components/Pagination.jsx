@@ -16,7 +16,7 @@ export default function Pagination({ postsPerPage, totalPosts, paginate, current
             </button>
             {
                 pageNumbers.map(number => (
-                    <button onClick={() => paginate(number)} key={number} className="hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:inline  hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-gray-200">
+                <button onClick={() => paginate(number)} key={number} className={`hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform ${currentPage === number ?  'bg-green-500' : 'bg-white'} bg-white rounded-md sm:inline  hover:bg-green-500 dark:hover:bg-green-500 hover:text-white dark:hover:text-gray-200`}>
                         {number}
                     </button>
                 ))
