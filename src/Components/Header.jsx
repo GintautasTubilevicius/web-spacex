@@ -9,7 +9,7 @@ export default function Header() {
         <nav className="bg-transparent">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
-                    <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                    <div className="flex items-center justify-between py-3 md:py-5 md:block ">
                         <Link to="/">
                             <div className="flex flex-col items-center border-solid border-white border-4 rounded-xl p-2">
                                 <div>
