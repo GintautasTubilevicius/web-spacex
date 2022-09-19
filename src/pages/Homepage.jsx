@@ -26,7 +26,7 @@ export default function Homepage() {
                             <Search />
                             <div className="relative flex-col py-5 items-center">
                                 <div className="flex-grow border-t border-white"></div>
-                                <h1 className="text-white text-2xl font-bold text-center py-4">Today's drink</h1>
+                                <h1 className="text-white text-2xl font-bold text-center py-4">Random drink</h1>
                                 <h1 className="text-white text-2xl font-bold text-center pb-10">{random.drinks[0].strDrink}</h1>
                             </div>
                             <div className="overflow-hidden  aspect-video bg-red-400 cursor-pointer rounded-xl relative group">
