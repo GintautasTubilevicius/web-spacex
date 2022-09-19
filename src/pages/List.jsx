@@ -47,7 +47,7 @@ export default function List() {
         <>
             {!currentPosts ? (<Loading />) : (
                 <section className="py-14 flex flex-col items-center">
-                    <h1 className="heading text-center pb-16 ">{currentPosts.length} Coctails found</h1>
+                    <h1 className="heading text-center pb-16 ">{list.length} Coctails found</h1>
                     <Pagination postsPerPage={postsPerPage} totalPosts={list.length} paginate={paginate} currentPage={currentPage} />
                     <div className="container flex items-center flex-wrap px-14 pt-4 pb-12">
                         {
