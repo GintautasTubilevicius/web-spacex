@@ -62,7 +62,7 @@ export default function SingleCoctail() {
                                         <li className="mt-8 text-xl font-bold text-white">Serving Glass</li>
                                         <li className="mb-2 text-xl">{strGlass}</li>
                                         <li className="text-lg text-white opacity-75 hover:opacity-100 pt-10">
-                                            <Link to="/gin"><button type="button" class="text-white-900 hover:text-white border border-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">&larr; Back to Gin</button></Link>
+                                            <Link to="/favorites"><button type="button" class="text-white-900 hover:text-white border border-white hover:bg-gray-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">&larr; Back to Favorites</button></Link>
                                         </li>
 
                                     </ul>
