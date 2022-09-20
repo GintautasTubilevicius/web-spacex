@@ -77,13 +77,13 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className="text-white hover:text-blue-600">
-                                <Link onClick={() => setNavbar(!navbar)} to="/favorites" className="text-2xl font-bold">
-                                    Favorites
+                                <Link onClick={() => setNavbar(!navbar)} to="/gin" className="text-2xl font-bold">
+                                    Gin
                                 </Link>
                             </li>
                             <li className="text-white hover:text-blue-600">
-                                <Link onClick={() => setNavbar(!navbar)} to="/gin" className="text-2xl font-bold">
-                                    Gin
+                                <Link onClick={() => setNavbar(!navbar)} to="/favorites" className="text-2xl font-bold">
+                                    Favorites
                                 </Link>
                             </li>
                         </ul>
