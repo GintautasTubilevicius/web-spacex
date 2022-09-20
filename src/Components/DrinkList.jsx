@@ -30,13 +30,13 @@ export default function DrinkList({ url, text }) {
             return obj.idDrink === index;
         });
         found.isSelected = !found.isSelected;
-        setCoctails(newItems);    
+        setCoctails(newItems);
         setHeart(s => [...s, found]);
     }
 
     useEffect(() => {
         localStorage.setItem('items', JSON.stringify(heart));
-      }, [heart]);
+    }, [heart]);
 
 
     const indexOfLastPost = currentPage * postsPerPage;

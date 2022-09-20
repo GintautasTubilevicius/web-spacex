@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url("./38132.jpg") center/cover;
+  background-color: black;
   @apply bg-fixed;
 }
 
