@@ -5,7 +5,7 @@ import Search from "./Search";
 import Pagination from "./Pagination";
 import axios from 'axios';
 
-export default function DrinkList({url, text}) {
+export default function DrinkList({ url, text }) {
 
     const [coctails, setCoctails] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -14,7 +14,6 @@ export default function DrinkList({url, text}) {
 
 
     useEffect(() => {
-        console.log(url)
         axios.get(url)
             .then(response => {
                 const drinks = response.data.drinks;
