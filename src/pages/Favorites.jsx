@@ -17,9 +17,9 @@ export default function Favorites() {
     return (
         <>
             {!items ? (<Loading />) : (
-                <section className="py-40 flex flex-col items-center">
+                <section className="py-40 flex flex-col items-center sm:px-5">
                     <h1 className="heading text-center pb-16 ">My Best Coctails</h1>
-                    <div className="container flex gap-10 items-center justify-center flex-wrap pt-4 pb-12">
+                    <div className="container flex gap-10 items-center justify-center flex-wrap pt-4 pb-12 px-3">
                         {
                             items.map(({ idDrink, strDrink, strDrinkThumb }) =>
                             (
@@ -29,7 +29,7 @@ export default function Favorites() {
                                         <p className="mt-1 text-sm text-gray-600 dark:text-gray-400"></p>
                                     </div>
                                     <Link to={`/coctails/${idDrink}`}>
-                                        <img className="object-cover w-full mt-2" src={strDrinkThumb} alt="NIKE AIR" />
+                                        <img className="object-cover w-full mt-2" src={strDrinkThumb} alt="Drinks" />
                                     </Link>
                                     <div className="flex items-center justify-center px-4 py-2 bg-gray-400">
                                         <button className="px-2 py-1 text-xs font-semibold text-gray-900 uppercase transition-colors duration-300 transform bg-white rounded hover:bg-gray-200 focus:bg-gray-400 focus:outline-none">Delete from favorites</button>

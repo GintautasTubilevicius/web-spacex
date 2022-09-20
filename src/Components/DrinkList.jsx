@@ -10,8 +10,7 @@ export default function DrinkList({ url, text }) {
     const [coctails, setCoctails] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(12);
-    const [heart, setHeart] = useState([]);
-
+    const [heart, setHeart] = useState(JSON.parse(localStorage.getItem('items')) || []);
 
     useEffect(() => {
         axios.get(url)
@@ -31,11 +30,14 @@ export default function DrinkList({ url, text }) {
             return obj.idDrink === index;
         });
         found.isSelected = !found.isSelected;
-        setCoctails(newItems);
+        setCoctails(newItems);    
         setHeart(s => [...s, found]);
     }
 
-    localStorage.setItem('items', JSON.stringify(heart));
+    useEffect(() => {
+        localStorage.setItem('items', JSON.stringify(heart));
+      }, [heart]);
+
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;

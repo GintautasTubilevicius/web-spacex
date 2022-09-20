@@ -44,7 +44,7 @@ export default function Homepage() {
                                 </div>
                                 <Link to={`/drinks/${random.drinks[0].idDrink}`}>
                                     <img
-                                        alt=""
+                                        alt="Random drink"
                                         className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"
                                         src={random.drinks[0].strDrinkThumb}
                                     />
