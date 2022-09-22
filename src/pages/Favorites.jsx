@@ -35,9 +35,8 @@ export default function Favorites() {
                                             <div>
                                                 <div className="transform-gpu  p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
                                                     <div className="font-bold text-xl">{strDrink}</div>
-                                                    <div className="font-bold text-sm">{strCategory}</div>
                                                     <div className="opacity-60 text-sm ">
-                                                        See your Favorite coctail instructions and ingredients
+                                                        See your Favorite Coctail instructions and ingredients
                                                     </div>
                                                 </div>
                                             </div>
