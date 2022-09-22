@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
-import { Loading } from "../Components"
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import { Loading } from "../Components";
 import axios from 'axios';
 
 export default function SingleCoctail() {
-    const [singleCoctail, setSingleCoctail] = useState([])
-    const { idDrink } = useParams()
+    const [singleCoctail, setSingleCoctail] = useState([]);
+    const { idDrink } = useParams();
 
     useEffect(() => {
         axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${idDrink}`)

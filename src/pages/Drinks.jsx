@@ -1,5 +1,5 @@
-import React from 'react'
-import DrinkList from '../Components/DrinkList'
+import React from 'react';
+import DrinkList from '../Components/DrinkList';
 
 export default function Drinks() {
 

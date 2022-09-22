@@ -13,7 +13,7 @@ export default function Favorites() {
 
     useEffect(() => {
         localStorage.setItem('items', JSON.stringify(items))
-        }, [items]);
+    }, [items]);
 
     return (
         <>

@@ -1,13 +1,13 @@
-import { useState, useEffect } from "react"
-import { Link, useParams } from "react-router-dom"
-import { Loading } from "../Components"
+import { useState, useEffect } from "react";
+import { Link, useParams } from "react-router-dom";
+import { Loading } from "../Components";
 import axios from 'axios';
 import { FaCocktail } from "react-icons/fa";
 
 
 export default function SingleDrink() {
-    const [singleDrink, setSingleDrink] = useState([])
-    const { idDrink } = useParams()
+    const [singleDrink, setSingleDrink] = useState([]);
+    const { idDrink } = useParams();
 
 
     useEffect(() => {
