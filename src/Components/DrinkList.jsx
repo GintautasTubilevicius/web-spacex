@@ -58,7 +58,7 @@ export default function DrinkList({ url, text }) {
                         {
                             currentPosts.map((list, index) =>
                             (
-                                <div key={list.idDrink} className="w-full md:w-1/2 xl:w-1/3 2xl:w-1/4 p-6 flex flex-col">
+                                <div key={list.idDrink} className="w-full sm:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-1/6 p-6 flex flex-col">
                                     <Link to={`/drinks/${list.idDrink}`}>
                                         <img className="hover:grow hover:shadow-lg rounded-lg" src={list.strDrinkThumb} alt={list.strDrink} />
                                     </Link>
