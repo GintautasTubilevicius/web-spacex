@@ -61,27 +61,27 @@ export default function Header() {
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-white hover:text-blue-600">
+                            <li className="text-white hover:text-green-500">
                                 <Link onClick={() => setNavbar(!navbar)} to="/coctails" className="text-2xl font-bold">
                                     Coctails
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
+                            <li className="text-white hover:text-green-500">
                                 <Link onClick={() => setNavbar(!navbar)} to="/drinks" className="text-2xl font-bold">
                                     Drinks
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
+                            <li className="text-white hover:text-green-500">
                                 <Link onClick={() => setNavbar(!navbar)} to="/nonalcoholic" className=" text-2xl font-bold">
                                     Non Alcoholic
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
+                            <li className="text-white hover:text-green-500">
                                 <Link onClick={() => setNavbar(!navbar)} to="/gin" className="text-2xl font-bold">
                                     Gin
                                 </Link>
                             </li>
-                            <li className="text-white hover:text-blue-600">
+                            <li className="text-white hover:text-green-500">
                                 <Link onClick={() => setNavbar(!navbar)} to="/favorites" className="text-2xl font-bold">
                                     Favorites
                                 </Link>
