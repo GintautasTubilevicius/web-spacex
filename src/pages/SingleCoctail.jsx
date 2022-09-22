@@ -15,7 +15,7 @@ export default function SingleCoctail() {
     return (
         <>
             {!singleCoctail.drinks ? (<Loading />) : (
-                <section className="py-56 place-items-center xl:px-64 2xl:px-96">
+                <section className="py-14 place-items-center xl:px-64 2xl:px-96">
                     {
                         singleCoctail.drinks.map(({
                             idDrink,
