@@ -24,7 +24,7 @@ export default function Favorites() {
                         {
                             items.map(({ idDrink, strDrink, strDrinkThumb, strCategory, strInstructions }) =>
                             (
-                                <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800" key={idDrink}>
+                                <div className="max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 sm:w-1/2 md:w-1/3 xl:w-1/4 2xl:w-1/6" key={idDrink}>
                                     <div className="px-4 py-2">
                                         <h1 className="text-lg font-bold text-gray-800 dark:text-white truncate">{strDrink}</h1>
                                         <p className="mt-1 text-sm text-gray-600 dark:text-gray-400"></p>

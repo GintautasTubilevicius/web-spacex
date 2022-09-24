@@ -20,18 +20,25 @@ export default function DrinkList({ url, text }) {
                     ...o,
                     isSelected: false
                 }));
-                setCoctails(newdata);
+                const newDataWithFavorites = newdata.map((item) => {
+                    if (heart.find(s => s.idDrink === item.idDrink)) {
+                        item.isSelected = true;
+                    }
+                    return item;
+                })
+                setCoctails(newDataWithFavorites);
             });
-    }, [url]);
+    }, [url, heart]);
 
     const Favorite = (index) => {
         const newItems = [...coctails];
         const found = newItems.find(obj => {
             return obj.idDrink === index;
         });
+        const match = heart.some(s => s.idDrink === found.idDrink)
         found.isSelected = !found.isSelected;
+        if (!match) setHeart(s => [...s, found]);
         setCoctails(newItems);
-        setHeart(s => [...s, found]);
     }
 
     useEffect(() => {
