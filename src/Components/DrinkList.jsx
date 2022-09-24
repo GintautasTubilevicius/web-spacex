@@ -37,6 +37,7 @@ export default function DrinkList({ url, text }) {
         });
         const match = heart.some(s => s.idDrink === found.idDrink)
         found.isSelected = !found.isSelected;
+        if(!found.isSelected) setHeart(s => [...s].filter(element => element.idDrink !== found.idDrink));
         if (!match) setHeart(s => [...s, found]);
         setCoctails(newItems);
     }
@@ -56,7 +57,6 @@ export default function DrinkList({ url, text }) {
         <>
 
             {!currentPosts ? (<Loading />) : (
-
                 <section className="py-14 flex flex-col items-center">
                     <h1 className="heading text-center pb-16 ">{text}</h1>
                     <Search />

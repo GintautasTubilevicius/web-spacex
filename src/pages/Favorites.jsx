@@ -7,7 +7,6 @@ export default function Favorites() {
     const [items, setItems] = useState(JSON.parse(localStorage.getItem('items')) || []);
 
     const remove = (idDrink) => {
-        console.log('items', items)
         setItems(s => [...s].filter(element => element.idDrink !== idDrink))
     };
 
@@ -41,7 +40,7 @@ export default function Favorites() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <Link to={`/coctails/${idDrink}`}>
+                                        <Link to={`/drinks/${idDrink}`}>
                                             <img
                                                 alt="Random drink"
                                                 className="object-cover w-full aspect-square group-hover:scale-110 transition duration-300 ease-in-out"

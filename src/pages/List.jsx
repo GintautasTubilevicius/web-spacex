@@ -20,25 +20,32 @@ export default function List() {
                 const newdata = drinks.map((o) => ({
                     ...o,
                     isSelected: false
-                }))
-                setList(newdata);
-            })
-    }, [letter]);
+                }));
+                const newDataWithFavorites = newdata.map((item) => {
+                    if (heart.find(s => s.idDrink === item.idDrink)) {
+                        item.isSelected = true;
+                    }
+                    return item;
+                })
+                setList(newDataWithFavorites);
+            });
+    }, [letter, heart]);
 
     const Favorite = (index) => {
         const newItems = [...list];
         const found = newItems.find(obj => {
             return obj.idDrink === index;
         });
+        const match = heart.some(s => s.idDrink === found.idDrink)
         found.isSelected = !found.isSelected;
+        if(!found.isSelected) setHeart(s => [...s].filter(element => element.idDrink !== found.idDrink));
+        if (!match) setHeart(s => [...s, found]);
         setList(newItems);
-        setHeart(s => [...s, found]);
     }
-    
+
     useEffect(() => {
         localStorage.setItem('items', JSON.stringify(heart));
-      }, [heart]);
-    
+    }, [heart]);
 
     const indexOfLastPost = currentPage * postsPerPage;
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
